@@ -3,7 +3,7 @@
 #### A new way of GenZ learning with AI Powered Chatbot
   
 ## 🤖 Overview
- 
+  
 GenEDxAI is an innovative AI-powered education platform designed for GenZ learners. It combines interactive learning with personalized assessments to create a dynamic educational experience. The platform leverages Google's Gemini AI to provide intelligent responses to learning queries and generate customized exams.
 
 
