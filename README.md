@@ -13,7 +13,7 @@ GenEDxAI is an innovative AI-powered education platform designed for GenZ learne
 ## ✨ Features        
     
 - **🧠 Interactive Learning:** Ask questions on any topic and get detailed, educational responses
-- **📝 Personalized Exams:** Generate custom exams on any subject with automatic evaluation
+- **📝 Personalized Exams:** Generate custom exams on any subject with automatic evaluation 
 - **📊 Progress Tracking:** Monitor your learning journey with comprehensive result history
 - **🔐 Secure User Management:** Personal accounts with secure authentication
 - **📱 Responsive Design:** Optimized for both desktop and mobile devices
