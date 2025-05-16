@@ -2,7 +2,7 @@
     
 #### A new way of GenZ learning with AI Powered Chatbot       
               
-## 🔗 Live Demo                      
+## 🔗 Live Demo                       
 **[Try GenEDxAI Now](https://genedxai.onrender.com)**                          
                                    
 ## 🤖 Overview                
