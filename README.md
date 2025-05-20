@@ -1,4 +1,4 @@
-# GenEDxAI: AI-Powered Chatbot for Education  
+# GenEDxAI: AI-Powered Chatbot for Education   
     
 #### A new way of GenZ learning with AI Powered Chatbot        
                      
