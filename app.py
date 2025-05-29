@@ -1,6 +1,6 @@
  
 # import streamlit as st
-# import google.generativeai as genai
+# import google.generativeai as genai 
 # from utils.auth import login_user, register_user 
 # from utils.chatbot import get_learning_response    
 # from utils.exam import generate_exam, evaluate_exam  
