@@ -4,7 +4,7 @@
 # from utils.auth import login_user, register_user  
 # from utils.chatbot import get_learning_response      
 # from utils.exam import generate_exam, evaluate_exam   
-# from utils.db import store_result, get_user_results
+# from utils.db import store_result, get_user_results 
 
 # # Load custom CSS
 # with open("static/style.css") as f:
