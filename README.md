@@ -73,42 +73,36 @@ streamlit run app.py
 
 ## 🏗️ Project Structure
 
-Actual project structure based on the repository:
-
 ```
-project-root/
-├── __pycache__/
-│   ├── __init__.cpython-31.pyc
-│   └── config.cpython-31.pyc
-├── _init_.py                         # Python initialization file
-├── config.py                         # Configuration file with API keys and database settings
-├── static/
-│   ├── videos/                       # Video assets for UI
-│   ├── ai.json                       # Configuration for AI animations
-│   └── style.css                     # Custom CSS for styling the application
-├── utils/
-│   ├── __pycache__/
-│   │   ├── __init__.cpython-31.pyc
-│   │   ├── auth.python-310.pyc
-│   │   ├── chatbot.python-31.pyc
-│   │   ├── db.python-31.pyc
-│   │   └── exam.python-31.pyc
-│   ├── __init__.py                   # Utils package initialization
-│   ├── auth.py                       # User authentication functionality
-│   ├── chatbot.py                    # Core chatbot functionality using Gemini AI
-│   ├── db.py                         # Database operations and MongoDB connections
-│   └── exam.py                       # Exam generation and evaluation logic
-├── venv/                             # Virtual environment folder
-├── etc/jupyter/nbconfig/             # Jupyter notebook configurations
-│   ├── jupyterlab-plotly.json
-│   └── pydeck.json
-├── lib/site-packages/                # Python packages installed in virtual environment
-├── Scripts/                          # Executable scripts for the virtual environment
-├── share/jupyter/                    # Jupyter shared resources
-├── pyvenv.cfg                        # Python virtual environment configuration
-├── app.py                            # Main application entry point (Streamlit app)
-├── README.md                         # Project documentation
-└── requirements.txt                  # Project dependencies
+GenEDxAI/
+├── 📁 .devcontainer/
+│   └── 📄 devcontainer.json
+├── 📁 config/
+│   ├── 📁 __pycache__/
+│   ├── 🐍 __init__.py
+│   └── ⚙️ config.py                  # Configuration file with API keys and database settings
+├── 📁 static/
+│   ├── 📁 videos/                    # Video assets for UI
+│   ├── 🎨 ai.json                    # Configuration for AI animations
+│   └── 🎨 style.css                  # Custom CSS for styling the application
+├── 📁 utils/
+│   ├── 📁 __pycache__/
+│   ├── 🐍 __init__.py                # Utils package initialization
+│   ├── 🔐 auth.py                    # User authentication functionality
+│   ├── 🤖 chatbot.py                 # Core chatbot functionality using Gemini AI
+│   ├── 🗄️ db.py                      # Database operations and MongoDB connections
+│   └── 📝 exam.py                    # Exam generation and evaluation logic
+├── 📁 venv/                          # Virtual environment folder
+│   ├── 📁 Include/
+│   ├── 📁 Lib/
+│   ├── 📁 Scripts/
+│   ├── 📁 share/
+│   └── ⚙️ pyvenv.cfg
+├── 🚀 app.py                         # Main application entry point (Streamlit app)
+├── 🌍 .env                           # Environment variables (keep this secure!)
+├── 🔧 .gitignore                     # Git ignore rules
+├── 📚 README.md                      # Project documentation
+└── 📋 requirements.txt               # Project dependencies
 ```
 
 ## 🔧 Configuration
@@ -171,21 +165,131 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [MongoDB](https://www.mongodb.com/) for database solutions
 - [Lottie Files](https://lottiefiles.com/) for beautiful animations
 
-## 👥 Team Members
+## 🌟 Meet Our Amazing Team
 
-This project was developed as a group effort by:
+<div align="center">
 
-1. **Mohan Krishna Thalla** - [GitHub Profile](https://github.com/mohan13krishna)
-2. **Rakesh Kolipaka** - [GitHub Profile](https://github.com/rakeshkolipakaace)
-3. **Udaykiran Neelam** - [GitHub Profile](https://github.com/udaykiran2102)
-4. **Ranjith Kumar Digutla** - [GitHub Profile](https://github.com/ranjith93250)
+### 💫 **The Brilliant Minds Behind GenEDxAI** 💫
 
-## 📞 Contact
-
-Project Link: [https://github.com/mohan13krishna/GenEDxAI](https://github.com/mohan13krishna/GenEDxAI)
+</div>
 
 ---
 
-⭐ Star this repository if you find it helpful! ⭐
+<table align="center">
+<tr>
+<td align="center" width="25%">
+<img src="https://github.com/udaykiran2102.png" width="120px" style="border-radius: 50%; border: 3px solid #00d4ff;"/><br/>
+<b>🎨 Frontend Developer</b><br/>
+<h3><a href="https://github.com/udaykiran2102">Uday Kiran Neelam</a></h3>
+<sub>Crafting Beautiful User Experiences</sub><br/>
+<em>"Making AI accessible through stunning interfaces"</em>
+</td>
+<td align="center" width="25%">
+<img src="https://github.com/mohan13krishna.png" width="120px" style="border-radius: 50%; border: 3px solid #ff6b6b;"/><br/>
+<b>⚙️ Backend Developer</b><br/>
+<h3><a href="https://github.com/mohan13krishna">Mohan Krishna Thalla</a></h3>
+<sub>Building Robust Server Architecture</sub><br/>
+<em>"Powering seamless learning experiences"</em>
+</td>
+</tr>
+<tr>
+<td align="center" width="25%">
+<img src="https://github.com/rakeshkolipakaace.png" width="120px" style="border-radius: 50%; border: 3px solid #4ecdc4;"/><br/>
+<b>🤖 AI Integration Engineer</b><br/>
+<h3><a href="https://github.com/rakeshkolipakaace">Rakesh Kolipaka</a></h3>
+<sub>Integrating Intelligent Solutions</sub><br/>
+<em>"Bridging human curiosity with AI wisdom"</em>
+</td>
+<td align="center" width="25%">
+<img src="https://github.com/ranjith93250.png" width="120px" style="border-radius: 50%; border: 3px solid #95e1d3;"/><br/>
+<b>🗄️ Database Manager</b><br/>
+<h3><a href="https://github.com/ranjith93250">Ranjith Kumar Digutla</a></h3>
+<sub>Managing Data Architecture</sub><br/>
+<em>"Ensuring data flows like poetry"</em>
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+### 🚀 **Our Mission** 
+*"Revolutionizing education through AI-powered learning experiences for the next generation"*
+
+### 🎯 **Our Vision**
+*"Making quality education accessible, interactive, and personalized for every GenZ learner"*
+
+</div>
+
+---
+
+## 👨‍🏫 Faculty Guidance
+
+<div align="center">
+
+### 🎓 **Under the Guidance of Our Esteemed Faculty Coordinators** 🎓
+
+</div>
+
+---
+
+<table align="center">
+<tr>
+<td align="center" width="33%">
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 15px; margin: 10px;">
+<h3>👩‍🏫 Mrs. P. Swaroopa</h3>
+<b>Subject Faculty Coordinator</b><br/>
+<sub>Guiding Academic Excellence</sub><br/>
+<em>"Inspiring innovation in education technology"</em>
+</div>
+</td>
+<td align="center" width="33%">
+<div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 20px; border-radius: 15px; margin: 10px;">
+<h3>👨‍🏫 Dr. M. V. Vijaya Saradhi</h3>
+<b>Subject Faculty Coordinator</b><br/>
+<sub>Research & Development Mentor</sub><br/>
+<em>"Fostering cutting-edge AI research"</em>
+</div>
+</td>
+<td align="center" width="33%">
+<div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 20px; border-radius: 15px; margin: 10px;">
+<h3>👩‍🏫 Mrs. Ch. Srivasta</h3>
+<b>Subject Faculty Coordinator</b><br/>
+<sub>Technical Excellence Guide</sub><br/>
+<em>"Shaping tomorrow's tech leaders"</em>
+</div>
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+### 🙏 **Acknowledgment**
+*"We extend our heartfelt gratitude to our faculty coordinators for their invaluable guidance, mentorship, and continuous support throughout this project. Their expertise and encouragement have been instrumental in bringing GenEDxAI to life."*
+
+</div>
+
+---
+
+## 📞 Contact
+
+**Project Repository:** [https://github.com/mohan13krishna/GenEDxAI](https://github.com/mohan13krishna/GenEDxAI)
+
+**Live Demo:** [https://genedxai.onrender.com](https://genedxai.onrender.com)
+
+---
+
+<div align="center">
+
+⭐ **Star this repository if you find it helpful!** ⭐
+
+*Built with ❤️ by the GenEDxAI Team*
+
+</div>
+
+---
 
 > **Note**: This project is for educational purposes. Please use responsibly and respect the terms of service of all integrated APIs.
