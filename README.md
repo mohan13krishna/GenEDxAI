@@ -279,38 +279,36 @@ Have an idea? We'd love to hear it! Submit a feature request with:
 
 <table align="center">
 <tr>
-<td align="center" width="200px">
+<td align="center" width="25%">
 <a href="https://github.com/udaykiran2102">
-<img src="https://github.com/udaykiran2102.png" width="100px" style="border-radius: 50%;"/><br/>
-<b>Uday Kiran Neelam</b><br/>
-🎨 Frontend Developer<br/>
-<i>"Crafting beautiful experiences"</i>
+<img src="https://github.com/udaykiran2102.png" width="120px" style="border-radius: 50%;"/><br/>
+<h3><b>Uday Kiran Neelam</b></h3>
+<h4>🎨 Frontend Developer</h4>
+<p><i>"Crafting beautiful experiences"</i></p>
 </a>
 </td>
-<td align="center" width="200px">
+<td align="center" width="25%">
 <a href="https://github.com/mohan13krishna">
-<img src="https://github.com/mohan13krishna.png" width="100px" style="border-radius: 50%;"/><br/>
-<b>Mohan Krishna Thalla</b><br/>
-⚙️ Backend Developer<br/>
-<i>"Building robust architecture"</i>
+<img src="https://github.com/mohan13krishna.png" width="120px" style="border-radius: 50%;"/><br/>
+<h3><b>Mohan Krishna Thalla</b></h3>
+<h4>⚙️ Backend Developer</h4>
+<p><i>"Building robust architecture"</i></p>
 </a>
 </td>
-</tr>
-<tr>
-<td align="center" width="200px">
+<td align="center" width="25%">
 <a href="https://github.com/rakeshkolipakaace">
-<img src="https://github.com/rakeshkolipakaace.png" width="100px" style="border-radius: 50%;"/><br/>
-<b>Rakesh Kolipaka</b><br/>
-🤖 AI Integration Engineer<br/>
-<i>"Integrating AI solutions"</i>
+<img src="https://github.com/rakeshkolipakaace.png" width="120px" style="border-radius: 50%;"/><br/>
+<h3><b>Rakesh Kolipaka</b></h3>
+<h4>🤖 AI Integration Engineer</h4>
+<p><i>"Integrating AI solutions"</i></p>
 </a>
 </td>
-<td align="center" width="200px">
+<td align="center" width="25%">
 <a href="https://github.com/ranjith93250">
-<img src="https://github.com/ranjith93250.png" width="100px" style="border-radius: 50%;"/><br/>
-<b>Ranjith Kumar Digutla</b><br/>
-🗄️ Database Manager<br/>
-<i>"Managing data architecture"</i>
+<img src="https://github.com/ranjith93250.png" width="120px" style="border-radius: 50%;"/><br/>
+<h3><b>Ranjith Kumar Digutla</b></h3>
+<h4>🗄️ Database Manager</h4>
+<p><i>"Managing data architecture"</i></p>
 </a>
 </td>
 </tr>
