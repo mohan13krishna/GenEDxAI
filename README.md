@@ -282,7 +282,7 @@ Have an idea? We'd love to hear it! Submit a feature request with:
 <td align="center" width="25%">
 <a href="https://github.com/udaykiran2102">
 <img src="https://github.com/udaykiran2102.png" width="120px" style="border-radius: 50%;"/><br/>
-<h3><b>Uday Kiran Neelam</b></h3>
+<h3><b>Uday Kiran</b></h3>
 <h4>🎨 Frontend Developer</h4>
 <p><i>"Crafting beautiful experiences"</i></p>
 </a>
@@ -290,7 +290,7 @@ Have an idea? We'd love to hear it! Submit a feature request with:
 <td align="center" width="25%">
 <a href="https://github.com/mohan13krishna">
 <img src="https://github.com/mohan13krishna.png" width="120px" style="border-radius: 50%;"/><br/>
-<h3><b>Mohan Krishna Thalla</b></h3>
+<h3><b>Mohan Krishna</b></h3>
 <h4>⚙️ Backend Developer</h4>
 <p><i>"Building robust architecture"</i></p>
 </a>
@@ -298,7 +298,7 @@ Have an idea? We'd love to hear it! Submit a feature request with:
 <td align="center" width="25%">
 <a href="https://github.com/rakeshkolipakaace">
 <img src="https://github.com/rakeshkolipakaace.png" width="120px" style="border-radius: 50%;"/><br/>
-<h3><b>Rakesh Kolipaka</b></h3>
+<h3><b>Rakesh</b></h3>
 <h4>🤖 AI Integration Engineer</h4>
 <p><i>"Integrating AI solutions"</i></p>
 </a>
@@ -306,7 +306,7 @@ Have an idea? We'd love to hear it! Submit a feature request with:
 <td align="center" width="25%">
 <a href="https://github.com/ranjith93250">
 <img src="https://github.com/ranjith93250.png" width="120px" style="border-radius: 50%;"/><br/>
-<h3><b>Ranjith Kumar Digutla</b></h3>
+<h3><b>Ranjith Kumar</b></h3>
 <h4>🗄️ Database Manager</h4>
 <p><i>"Managing data architecture"</i></p>
 </a>
