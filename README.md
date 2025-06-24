@@ -165,13 +165,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [MongoDB](https://www.mongodb.com/) for database solutions
 - [Lottie Files](https://lottiefiles.com/) for beautiful animations
 
-## 🌟 Meet Our Legendary Team
+## 🌟 Meet Our Amazing Team
 
 <div align="center">
 
-### ⚡ **The Visionary Architects of GenEDxAI** ⚡
-
-*Where Innovation Meets Excellence*
+### 💫 **The Brilliant Minds Behind GenEDxAI** 💫
 
 </div>
 
@@ -179,203 +177,56 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 <div align="center">
 
-```
-                          🌟 TEAM CONSTELLATION 🌟
-                                    
-                            🎨 Uday Kiran Neelam
-                          ╭─────────────────────╮
-                      🤖 ─┤    FRONTEND WIZARD   ├─ 🗄️
-                Rakesh     ╰─────────────────────╯     Ranjith
-               Kolipaka              │                 Kumar
-                  │                 │                 Digutla
-                  │           ⚙️ Mohan Krishna        │
-                  │            Thalla (CORE)          │
-                  │                 │                 │
-          ╭───────────────╮         │         ╭──────────────╮
-          │  AI MASTERMIND │    ━━━━━┷━━━━━    │ DATA SORCERER│
-          ╰───────────────╯                  ╰──────────────╯
-                                    
-               💡 Innovation Hub 💡
-```
-
-</div>
-
----
-
-<div align="center">
-
-### 🎭 **The Fantastic Four** 🎭
-
-</div>
-
-<table align="center">
+<table>
 <tr>
-<td align="center" width="50%" style="padding: 20px;">
-
-```
-    ╔══════════════════════════════════╗
-    ║         🎨 FRONTEND WIZARD        ║
-    ╠══════════════════════════════════╣
-    ║                                  ║
-```
-<img src="https://github.com/udaykiran2102.png" width="100px" style="border-radius: 50%; border: 5px solid #00d4ff; box-shadow: 0 0 30px #00d4ff, inset 0 0 10px rgba(0,212,255,0.3);"/>
-
-**[Uday Kiran Neelam](https://github.com/udaykiran2102)**
-
-```
-    ║  ✨ UI/UX Design Mastery         ║
-    ║  🎯 React Development Expert     ║
-    ║  🌈 User Experience Architect    ║
-    ║                                  ║
-    ║  "Crafting digital poetry        ║
-    ║   that users fall in love with"  ║
-    ╚══════════════════════════════════╝
-```
-
+<td align="center" width="250px">
+<div style="background: linear-gradient(145deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); margin: 15px;">
+<img src="https://github.com/udaykiran2102.png" width="120px" style="border-radius: 50%; border: 4px solid white; margin-bottom: 15px;"/>
+<h3 style="color: white; margin: 10px 0;">🎨 Frontend Developer</h3>
+<h2 style="color: white; margin: 5px 0;"><a href="https://github.com/udaykiran2102" style="color: white; text-decoration: none;">Uday Kiran Neelam</a></h2>
+<p style="color: #f0f0f0; font-style: italic; margin: 10px 0;">"Crafting beautiful user experiences"</p>
+</div>
 </td>
-<td align="center" width="50%" style="padding: 20px;">
-
-```
-    ╔══════════════════════════════════╗
-    ║        ⚙️ BACKEND ARCHITECT       ║
-    ╠══════════════════════════════════╣
-    ║                                  ║
-```
-<img src="https://github.com/mohan13krishna.png" width="100px" style="border-radius: 50%; border: 5px solid #ff6b6b; box-shadow: 0 0 30px #ff6b6b, inset 0 0 10px rgba(255,107,107,0.3);"/>
-
-**[Mohan Krishna Thalla](https://github.com/mohan13krishna)**
-
-```
-    ║  🏗️ Server Architecture Genius   ║
-    ║  🔌 API Development Specialist   ║
-    ║  🎯 System Design Virtuoso       ║
-    ║                                  ║
-    ║  "Building the invisible         ║
-    ║   foundation of tomorrow"        ║
-    ╚══════════════════════════════════╝
-```
-
+<td align="center" width="250px">
+<div style="background: linear-gradient(145deg, #f093fb 0%, #f5576c 100%); padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); margin: 15px;">
+<img src="https://github.com/mohan13krishna.png" width="120px" style="border-radius: 50%; border: 4px solid white; margin-bottom: 15px;"/>
+<h3 style="color: white; margin: 10px 0;">⚙️ Backend Developer</h3>
+<h2 style="color: white; margin: 5px 0;"><a href="https://github.com/mohan13krishna" style="color: white; text-decoration: none;">Mohan Krishna Thalla</a></h2>
+<p style="color: #f0f0f0; font-style: italic; margin: 10px 0;">"Building robust server architecture"</p>
+</div>
 </td>
 </tr>
 <tr>
-<td align="center" width="50%" style="padding: 20px;">
-
-```
-    ╔══════════════════════════════════╗
-    ║         🤖 AI MASTERMIND          ║
-    ╠══════════════════════════════════╣
-    ║                                  ║
-```
-<img src="https://github.com/rakeshkolipakaace.png" width="100px" style="border-radius: 50%; border: 5px solid #4ecdc4; box-shadow: 0 0 30px #4ecdc4, inset 0 0 10px rgba(78,205,196,0.3);"/>
-
-**[Rakesh Kolipaka](https://github.com/rakeshkolipakaace)**
-
-```
-    ║  🧠 Machine Learning Sage        ║
-    ║  🔮 Gemini AI Integration Pro    ║
-    ║  ⚡ Smart Algorithm Designer     ║
-    ║                                  ║
-    ║  "Teaching silicon minds         ║
-    ║   to understand human hearts"    ║
-    ╚══════════════════════════════════╝
-```
-
+<td align="center" width="250px">
+<div style="background: linear-gradient(145deg, #4facfe 0%, #00f2fe 100%); padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); margin: 15px;">
+<img src="https://github.com/rakeshkolipakaace.png" width="120px" style="border-radius: 50%; border: 4px solid white; margin-bottom: 15px;"/>
+<h3 style="color: white; margin: 10px 0;">🤖 AI Integration Engineer</h3>
+<h2 style="color: white; margin: 5px 0;"><a href="https://github.com/rakeshkolipakaace" style="color: white; text-decoration: none;">Rakesh Kolipaka</a></h2>
+<p style="color: #f0f0f0; font-style: italic; margin: 10px 0;">"Integrating intelligent AI solutions"</p>
+</div>
 </td>
-<td align="center" width="50%" style="padding: 20px;">
-
-```
-    ╔══════════════════════════════════╗
-    ║         🗄️ DATA SORCERER          ║
-    ╠══════════════════════════════════╣
-    ║                                  ║
-```
-<img src="https://github.com/ranjith93250.png" width="100px" style="border-radius: 50%; border: 5px solid #95e1d3; box-shadow: 0 0 30px #95e1d3, inset 0 0 10px rgba(149,225,211,0.3);"/>
-
-**[Ranjith Kumar Digutla](https://github.com/ranjith93250)**
-
-```
-    ║  📊 Database Design Architect    ║
-    ║  🛡️ MongoDB Security Guardian    ║
-    ║  🌊 Data Flow Orchestrator       ║
-    ║                                  ║
-    ║  "Weaving data symphonies        ║
-    ║   that power digital dreams"     ║
-    ╚══════════════════════════════════╝
-```
-
+<td align="center" width="250px">
+<div style="background: linear-gradient(145deg, #a8edea 0%, #fed6e3 100%); padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); margin: 15px;">
+<img src="https://github.com/ranjith93250.png" width="120px" style="border-radius: 50%; border: 4px solid white; margin-bottom: 15px;"/>
+<h3 style="color: #333; margin: 10px 0;">🗄️ Database Manager</h3>
+<h2 style="color: #333; margin: 5px 0;"><a href="https://github.com/ranjith93250" style="color: #333; text-decoration: none;">Ranjith Kumar Digutla</a></h2>
+<p style="color: #555; font-style: italic; margin: 10px 0;">"Managing data architecture"</p>
+</div>
 </td>
 </tr>
 </table>
 
----
-
-<div align="center">
-
-### 🎆 **The Sacred Geometry of Success** 🎆
-
-```
-                    🌟 VISION 🌟
-                         │
-                    ┌────┴────┐
-                    │ PASSION │
-               ┌────┴────┐    └────┬────┐
-               │ SKILL   │         │ TEAMWORK │
-          ┌────┴────┐    └────┬────┘    └────┬────┐
-          │ CODE    │         │ AI │         │ DATA │
-          └─────────┘    ┌────┴────┐    ┌────┴─────┐
-                         │ DESIGN  │    │ INNOVATION│
-                         └─────────┘    └───────────┘
-                              │              │
-                         ╔════════════════════════╗
-                         ║      🚀 GENEDXAI       ║
-                         ║   Future of Learning   ║
-                         ╚════════════════════════╝
-```
-
 </div>
 
 ---
 
 <div align="center">
 
-### 💫 **Our Magical Formula** 💫
+### 🚀 **Our Mission** 
+*"Revolutionizing education through AI-powered learning experiences for the next generation"*
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│  🎨 CREATIVITY × ⚙️ ENGINEERING × 🤖 INTELLIGENCE × 🗄️ WISDOM  │
-│                              ║                              │
-│                         ═══════════                        │
-│                              ▼                              │
-│                     ✨ EDUCATIONAL MAGIC ✨                │
-└─────────────────────────────────────────────────────────────┘
-```
-
-**Mission Decoder:** *"Transforming curiosity into knowledge, one AI interaction at a time"*
-
-**Vision Amplifier:** *"Building bridges between human potential and artificial intelligence"*
-
-</div>
-
----
-
-<div align="center">
-
-### 🌈 **The DNA of GenEDxAI** 🌈
-
-```
-        🧬 Innovation Helix 🧬
-           
-    A ═══╗     ╔═══ T     
-        ║     ║         
-    G ═══╝     ╚═══ C     
-        
-    A = 🎨 Artistry (Frontend Magic)
-    T = 🔧 Technology (Backend Power) 
-    G = 🧠 Genius (AI Intelligence)
-    C = 📊 Computation (Data Mastery)
-```
-
-*The perfect genetic combination for educational evolution!* 🚀
+### 🎯 **Our Vision**
+*"Making quality education accessible, interactive, and personalized for every GenZ learner"*
 
 </div>
 
