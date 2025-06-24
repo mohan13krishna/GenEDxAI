@@ -179,12 +179,24 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 <div align="center">
 
-| 🎯 **Role** | 👑 **Team Member** | 🚀 **Expertise** | 🌟 **Impact** |
-|:---:|:---:|:---:|:---:|
-| **🎨 Frontend Wizard** | **[Uday Kiran Neelam](https://github.com/udaykiran2102)** <br/> <img src="https://github.com/udaykiran2102.png" width="80px" style="border-radius: 50%; border: 4px solid #00d4ff; box-shadow: 0 0 20px #00d4ff;"/> | UI/UX Design<br/>React Development<br/>User Experience | *"Transforming complex AI into intuitive magic"* |
-| **⚙️ Backend Architect** | **[Mohan Krishna Thalla](https://github.com/mohan13krishna)** <br/> <img src="https://github.com/mohan13krishna.png" width="80px" style="border-radius: 50%; border: 4px solid #ff6b6b; box-shadow: 0 0 20px #ff6b6b;"/> | Server Architecture<br/>API Development<br/>System Design | *"Building the backbone that powers dreams"* |
-| **🤖 AI Mastermind** | **[Rakesh Kolipaka](https://github.com/rakeshkolipakaace)** <br/> <img src="https://github.com/rakeshkolipakaace.png" width="80px" style="border-radius: 50%; border: 4px solid #4ecdc4; box-shadow: 0 0 20px #4ecdc4;"/> | Machine Learning<br/>Gemini AI Integration<br/>Smart Algorithms | *"Teaching machines to teach humans"* |
-| **🗄️ Data Sorcerer** | **[Ranjith Kumar Digutla](https://github.com/ranjith93250)** <br/> <img src="https://github.com/ranjith93250.png" width="80px" style="border-radius: 50%; border: 4px solid #95e1d3; box-shadow: 0 0 20px #95e1d3;"/> | Database Design<br/>MongoDB Expert<br/>Data Security | *"Making data dance in perfect harmony"* |
+```
+                          🌟 TEAM CONSTELLATION 🌟
+                                    
+                            🎨 Uday Kiran Neelam
+                          ╭─────────────────────╮
+                      🤖 ─┤    FRONTEND WIZARD   ├─ 🗄️
+                Rakesh     ╰─────────────────────╯     Ranjith
+               Kolipaka              │                 Kumar
+                  │                 │                 Digutla
+                  │           ⚙️ Mohan Krishna        │
+                  │            Thalla (CORE)          │
+                  │                 │                 │
+          ╭───────────────╮         │         ╭──────────────╮
+          │  AI MASTERMIND │    ━━━━━┷━━━━━    │ DATA SORCERER│
+          ╰───────────────╯                  ╰──────────────╯
+                                    
+               💡 Innovation Hub 💡
+```
 
 </div>
 
@@ -192,10 +204,132 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 <div align="center">
 
-### 🎭 **Team Dynamics**
+### 🎭 **The Fantastic Four** 🎭
+
+</div>
+
+<table align="center">
+<tr>
+<td align="center" width="50%" style="padding: 20px;">
 
 ```
-💡 INNOVATION + 🔥 PASSION + ⚡ EXPERTISE = 🚀 GENEDXAI
+    ╔══════════════════════════════════╗
+    ║         🎨 FRONTEND WIZARD        ║
+    ╠══════════════════════════════════╣
+    ║                                  ║
+```
+<img src="https://github.com/udaykiran2102.png" width="100px" style="border-radius: 50%; border: 5px solid #00d4ff; box-shadow: 0 0 30px #00d4ff, inset 0 0 10px rgba(0,212,255,0.3);"/>
+
+**[Uday Kiran Neelam](https://github.com/udaykiran2102)**
+
+```
+    ║  ✨ UI/UX Design Mastery         ║
+    ║  🎯 React Development Expert     ║
+    ║  🌈 User Experience Architect    ║
+    ║                                  ║
+    ║  "Crafting digital poetry        ║
+    ║   that users fall in love with"  ║
+    ╚══════════════════════════════════╝
+```
+
+</td>
+<td align="center" width="50%" style="padding: 20px;">
+
+```
+    ╔══════════════════════════════════╗
+    ║        ⚙️ BACKEND ARCHITECT       ║
+    ╠══════════════════════════════════╣
+    ║                                  ║
+```
+<img src="https://github.com/mohan13krishna.png" width="100px" style="border-radius: 50%; border: 5px solid #ff6b6b; box-shadow: 0 0 30px #ff6b6b, inset 0 0 10px rgba(255,107,107,0.3);"/>
+
+**[Mohan Krishna Thalla](https://github.com/mohan13krishna)**
+
+```
+    ║  🏗️ Server Architecture Genius   ║
+    ║  🔌 API Development Specialist   ║
+    ║  🎯 System Design Virtuoso       ║
+    ║                                  ║
+    ║  "Building the invisible         ║
+    ║   foundation of tomorrow"        ║
+    ╚══════════════════════════════════╝
+```
+
+</td>
+</tr>
+<tr>
+<td align="center" width="50%" style="padding: 20px;">
+
+```
+    ╔══════════════════════════════════╗
+    ║         🤖 AI MASTERMIND          ║
+    ╠══════════════════════════════════╣
+    ║                                  ║
+```
+<img src="https://github.com/rakeshkolipakaace.png" width="100px" style="border-radius: 50%; border: 5px solid #4ecdc4; box-shadow: 0 0 30px #4ecdc4, inset 0 0 10px rgba(78,205,196,0.3);"/>
+
+**[Rakesh Kolipaka](https://github.com/rakeshkolipakaace)**
+
+```
+    ║  🧠 Machine Learning Sage        ║
+    ║  🔮 Gemini AI Integration Pro    ║
+    ║  ⚡ Smart Algorithm Designer     ║
+    ║                                  ║
+    ║  "Teaching silicon minds         ║
+    ║   to understand human hearts"    ║
+    ╚══════════════════════════════════╝
+```
+
+</td>
+<td align="center" width="50%" style="padding: 20px;">
+
+```
+    ╔══════════════════════════════════╗
+    ║         🗄️ DATA SORCERER          ║
+    ╠══════════════════════════════════╣
+    ║                                  ║
+```
+<img src="https://github.com/ranjith93250.png" width="100px" style="border-radius: 50%; border: 5px solid #95e1d3; box-shadow: 0 0 30px #95e1d3, inset 0 0 10px rgba(149,225,211,0.3);"/>
+
+**[Ranjith Kumar Digutla](https://github.com/ranjith93250)**
+
+```
+    ║  📊 Database Design Architect    ║
+    ║  🛡️ MongoDB Security Guardian    ║
+    ║  🌊 Data Flow Orchestrator       ║
+    ║                                  ║
+    ║  "Weaving data symphonies        ║
+    ║   that power digital dreams"     ║
+    ╚══════════════════════════════════╝
+```
+
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+### 🎆 **The Sacred Geometry of Success** 🎆
+
+```
+                    🌟 VISION 🌟
+                         │
+                    ┌────┴────┐
+                    │ PASSION │
+               ┌────┴────┐    └────┬────┐
+               │ SKILL   │         │ TEAMWORK │
+          ┌────┴────┐    └────┬────┘    └────┬────┐
+          │ CODE    │         │ AI │         │ DATA │
+          └─────────┘    ┌────┴────┐    ┌────┴─────┐
+                         │ DESIGN  │    │ INNOVATION│
+                         └─────────┘    └───────────┘
+                              │              │
+                         ╔════════════════════════╗
+                         ║      🚀 GENEDXAI       ║
+                         ║   Future of Learning   ║
+                         ╚════════════════════════╝
 ```
 
 </div>
@@ -204,13 +338,21 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 <div align="center">
 
-### 🏆 **Our Collective Superpowers**
+### 💫 **Our Magical Formula** 💫
 
-🎯 **Mission Control:** *"Revolutionizing education through AI-powered learning experiences for the next generation"*
+```
+┌─────────────────────────────────────────────────────────────┐
+│  🎨 CREATIVITY × ⚙️ ENGINEERING × 🤖 INTELLIGENCE × 🗄️ WISDOM  │
+│                              ║                              │
+│                         ═══════════                        │
+│                              ▼                              │
+│                     ✨ EDUCATIONAL MAGIC ✨                │
+└─────────────────────────────────────────────────────────────┘
+```
 
-🌟 **Vision Quest:** *"Making quality education accessible, interactive, and personalized for every GenZ learner"*
+**Mission Decoder:** *"Transforming curiosity into knowledge, one AI interaction at a time"*
 
-💫 **Core Values:** *Innovation • Excellence • Collaboration • Impact*
+**Vision Amplifier:** *"Building bridges between human potential and artificial intelligence"*
 
 </div>
 
@@ -218,11 +360,22 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 <div align="center">
 
-### 🔥 **What Makes Us Unstoppable**
+### 🌈 **The DNA of GenEDxAI** 🌈
 
-🚀 **4 Brilliant Minds** | 💻 **1 Shared Vision** | 🎯 **Endless Possibilities**
+```
+        🧬 Innovation Helix 🧬
+           
+    A ═══╗     ╔═══ T     
+        ║     ║         
+    G ═══╝     ╚═══ C     
+        
+    A = 🎨 Artistry (Frontend Magic)
+    T = 🔧 Technology (Backend Power) 
+    G = 🧠 Genius (AI Intelligence)
+    C = 📊 Computation (Data Mastery)
+```
 
-*"Together, we're not just building an app – we're crafting the future of education!"*
+*The perfect genetic combination for educational evolution!* 🚀
 
 </div>
 
