@@ -1,446 +1,5 @@
- 
-# import streamlit as st
-# import google.generativeai as genai 
-# from utils.auth import login_user, register_user  
-# from utils.chatbot import get_learning_response      
-# from utils.exam import generate_exam, evaluate_exam     
-# from utils.db import store_result, get_user_results  
- 
-# # Load custom CSS    
-# with open("static/style.css") as f:
-#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+#app.py
 
-# # Initialize session state  
-# if "logged_in" not in st.session_state:
-#     st.session_state["logged_in"] = False
-#     st.session_state["username"] = None
-#     st.session_state["chat_history"] = []
-#     st.session_state["exam_active"] = False
-#     st.session_state["exam_questions"] = ""
-#     st.session_state["menu"] = "Login"  # Default menu
-
-# # Sidebar Navigation
-# st.sidebar.title("EduBot")
-
-# if not st.session_state["logged_in"]:
-#     menu = st.sidebar.radio("Menu", ["Login", "Register"])
-# else:
-#     menu = st.sidebar.radio("Menu", ["Learn", "Exam", "Results"])
-    
-#     if st.sidebar.button("Logout"):
-#         st.session_state["logged_in"] = False
-#         st.session_state["username"] = None
-#         st.session_state["chat_history"] = []
-#         st.session_state["exam_active"] = False
-#         st.session_state["menu"] = "Login"
-#         st.success("Logged out successfully!")
-#         st.experimental_rerun()
-
-# # Main Logic
-# if menu == "Login":
-#     st.title("Login to EduBot")
-#     username = st.sidebar.text_input("Username")
-#     password = st.sidebar.text_input("Password", type="password")
-    
-#     if st.sidebar.button("Login"):
-#         if login_user(username, password):
-#             st.session_state["logged_in"] = True
-#             st.session_state["username"] = username
-#             st.session_state["menu"] = "Results"  # Redirect to Results
-#             st.success("Logged in successfully!")
-#             st.experimental_rerun()  # Redirect to Results
-#         else:
-#             st.error("Invalid credentials or error connecting to database.")
-
-# elif menu == "Register":
-#     st.title("Register for EduBot")
-#     username = st.sidebar.text_input("New Username")
-#     password = st.sidebar.text_input("New Password", type="password")
-    
-#     if st.sidebar.button("Register"):
-#         try:
-#             register_user(username, password)
-#             st.success("Registered successfully! Please log in.")
-#         except Exception as e:
-#             st.error(f"Registration failed: {str(e)}")
-
-# elif menu == "Learn":
-#     st.title(f"Welcome, {st.session_state['username']}!")
-    
-#     try:
-#         st.image("static/images/banner.jpg", use_column_width=True)
-#     except Exception:
-#         st.warning("Banner image not found. Continuing without it.")
-
-#     prompt = st.text_area("Ask me anything to learn!", key="learn_input")
-    
-#     if st.button("Submit"):
-#         if prompt:
-#             try:
-#                 response = get_learning_response(prompt)
-#                 st.session_state["chat_history"].append({"user": prompt, "ai": response})
-#                 st.success("Response received!")
-#             except Exception as e:
-#                 st.error(f"Error with chatbot: {str(e)}")
-
-#     # Display chat history
-#     if st.session_state["chat_history"]:
-#         st.subheader("Chat History")
-#         for chat in st.session_state["chat_history"]:
-#             st.write(f"**You**: {chat['user']}")
-#             st.write(f"**AI**: {chat['ai']}")
-
-# elif menu == "Exam":
-#     st.title("Take an Exam")
-#     topic = st.text_input("Enter a topic for the exam")
-    
-#     if st.button("Start Exam") and topic:
-#         try:
-#             questions = generate_exam(topic)
-#             st.session_state["exam_questions"] = questions
-#             st.session_state["exam_active"] = True
-#             st.success("Exam started! Answer the questions below.")
-#         except Exception as e:
-#             st.error(f"Error generating exam: {str(e)}")
-
-#     if st.session_state["exam_active"]:
-#         st.write("Questions:", st.session_state["exam_questions"])
-#         answers = st.text_area("Enter your answers (one per line)", key="exam_input")
-        
-#         if st.button("Submit Answers"):
-#             try:
-#                 marks, mistakes = evaluate_exam(st.session_state["exam_questions"], answers)
-#                 store_result(st.session_state["username"], topic, marks, mistakes)
-#                 st.write(f"Your Score: {marks}/5")
-#                 st.write("Mistakes and Feedback:", mistakes)
-#                 st.session_state["exam_active"] = False
-#                 st.success("Exam submitted successfully!")
-#             except Exception as e:
-#                 st.error(f"Error evaluating exam: {str(e)}")
-
-# elif menu == "Results":
-#     st.title("Your Results")
-    
-#     try:
-#         results = get_user_results(st.session_state["username"])
-#         if results:
-#             for result in results:
-#                 st.write(f"Topic: {result['topic']}, Score: {result['marks']}/5, Date: {result['date']}")
-#                 st.write(f"Mistakes: {result['mistakes']}")
-#         else:
-#             st.write("No results yet. Take an exam!")
-#     except Exception as e:
-#         st.error(f"Error fetching results: {str(e)}")
-
-
-
-
-# import streamlit as st
-# import google.generativeai as genai
-# from utils.auth import login_user, register_user
-# from utils.chatbot import get_learning_response
-# from utils.exam import generate_exam, evaluate_exam
-# from utils.db import store_result, get_user_results
-
-# # Load custom CSS
-# with open("static/style.css") as f:
-#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-# # Initialize session state
-# if "logged_in" not in st.session_state:
-#     st.session_state["logged_in"] = False
-#     st.session_state["username"] = None
-#     st.session_state["chat_history"] = []
-#     st.session_state["exam_active"] = False
-#     st.session_state["exam_questions"] = ""
-#     st.session_state["menu"] = "Login"
-
-# # Sidebar Navigation
-# st.sidebar.title("📘 EduBot")
-
-# if not st.session_state["logged_in"]:
-#     menu = st.sidebar.radio("🔐 Menu", ["Login", "Register"])
-# else:
-#     menu = st.sidebar.radio("📚 Menu", ["Learn", "Exam", "Results"])
-    
-#     if st.sidebar.button("🚪 Logout"):
-#         st.session_state["logged_in"] = False
-#         st.session_state["username"] = None
-#         st.session_state["chat_history"] = []
-#         st.session_state["exam_active"] = False
-#         st.session_state["menu"] = "Login"
-#         st.success("✅ Logged out successfully!")
-#         st.rerun()
-
-# # Main Logic
-# if menu == "Login":
-#     st.title("🔑 Login to EduBot")
-#     username = st.sidebar.text_input("👤 Username")
-#     password = st.sidebar.text_input("🔒 Password", type="password")
-    
-#     if st.sidebar.button("Login"):
-#         if login_user(username, password):
-#             st.session_state["logged_in"] = True
-#             st.session_state["username"] = username
-#             st.session_state["menu"] = "Results"
-#             st.success("✅ Logged in successfully!")
-#             st.rerun()
-#         else:
-#             st.error("❌ Invalid credentials or error connecting to database.")
-
-# elif menu == "Register":
-#     st.title("📝 Register for EduBot")
-#     username = st.sidebar.text_input("👤 New Username")
-#     password = st.sidebar.text_input("🔒 New Password", type="password")
-    
-#     if st.sidebar.button("Register"):
-#         try:
-#             register_user(username, password)
-#             st.success("✅ Registered successfully! Please log in.")
-#         except Exception as e:
-#             st.error(f"❌ Registration failed: {str(e)}")
-
-# elif menu == "Learn":
-#     st.title(f"👋 Welcome, {st.session_state['username']}!")
-    
-#     try:
-#         st.image("static/images/banner.jpg", use_column_width=True)
-#     except Exception:
-#         st.warning("⚠️ Banner image not found. Continuing without it.")
-
-#     prompt = st.text_area("💬 Ask me anything to learn!", key="learn_input")
-    
-#     if st.button("🚀 Submit"):
-#         if prompt:
-#             try:
-#                 response = get_learning_response(prompt)
-#                 st.session_state["chat_history"].append({"user": prompt, "ai": response})
-#                 st.success("✅ Response received!")
-#             except Exception as e:
-#                 st.error(f"❌ Error with chatbot: {str(e)}")
-
-#     if st.session_state["chat_history"]:
-#         st.subheader("📜 Chat History")
-#         for chat in st.session_state["chat_history"]:
-#             st.markdown(f"**🧑 You**: {chat['user']}")
-#             st.markdown(f"**🤖 AI**: {chat['ai']}")
-
-# elif menu == "Exam":
-#     st.title("📝 Take an Exam")
-#     topic = st.text_input("📚 Enter a topic for the exam")
-    
-#     if st.button("🎯 Start Exam") and topic:
-#         try:
-#             questions = generate_exam(topic)
-#             st.session_state["exam_questions"] = questions
-#             st.session_state["exam_active"] = True
-#             st.success("✅ Exam started! Answer the questions below.")
-#         except Exception as e:
-#             st.error(f"❌ Error generating exam: {str(e)}")
-
-#     if st.session_state["exam_active"]:
-#         st.subheader("📄 Questions")
-#         st.write(st.session_state["exam_questions"])
-#         answers = st.text_area("✏️ Enter your answers (one per line)", key="exam_input")
-        
-#         if st.button("📤 Submit Answers"):
-#             try:
-#                 marks, mistakes = evaluate_exam(st.session_state["exam_questions"], answers)
-#                 store_result(st.session_state["username"], topic, marks, mistakes)
-#                 st.success("✅ Exam submitted successfully!")
-#                 st.write(f"🎓 **Your Score:** {marks}/5")
-#                 st.write("🧠 **Mistakes & Feedback:**")
-#                 st.markdown(mistakes)
-#                 st.session_state["exam_active"] = False
-#             except Exception as e:
-#                 st.error(f"❌ Error evaluating exam: {str(e)}")
-
-# elif menu == "Results":
-#     st.title("📊 Your Results")
-    
-#     try:
-#         results = get_user_results(st.session_state["username"])
-#         if results:
-#             for result in results:
-#                 st.markdown(f"""
-#                 #### 📌 Topic: {result['topic']}
-#                 - 🏆 Score: **{result['marks']}/5**
-#                 - 🗓️ Date: {result['date']}
-#                 - ❗ Mistakes: {result['mistakes']}
-#                 ---
-#                 """)
-#         else:
-#             st.info("ℹ️ No results yet. Take an exam!")
-#     except Exception as e:
-#         st.error(f"❌ Error fetching results: {str(e)}")
-
-
-
-
-
-# import streamlit as st
-# from streamlit_lottie import st_lottie
-# import requests
-# import google.generativeai as genai
-# from utils.auth import login_user, register_user
-# from utils.chatbot import get_learning_response
-# from utils.exam import generate_exam, evaluate_exam
-# from utils.db import store_result, get_user_results
-
-# # Load custom CSS
-# with open("static/style.css") as f:
-#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-# # Helper to load Lottie animation
-# def load_lottieurl(url: str):
-#     r = requests.get(url)
-#     if r.status_code != 200:
-#         return None
-#     return r.json()
-
-# # Initialize session state
-# if "logged_in" not in st.session_state:
-#     st.session_state["logged_in"] = False
-#     st.session_state["username"] = None
-#     st.session_state["chat_history"] = []
-#     st.session_state["exam_active"] = False
-#     st.session_state["exam_questions"] = ""
-#     st.session_state["menu"] = "Login"
-
-# # Sidebar Navigation
-# st.sidebar.title("📘 EduBot")
-
-# if not st.session_state["logged_in"]:
-#     menu = st.sidebar.radio("🔐 Menu", ["Login", "Register"])
-# else:
-#     menu = st.sidebar.radio("📚 Menu", ["Learn", "Exam", "Results"])
-
-#     if st.sidebar.button("🚪 Logout"):
-#         st.session_state["logged_in"] = False
-#         st.session_state["username"] = None
-#         st.session_state["chat_history"] = []
-#         st.session_state["exam_active"] = False
-#         st.session_state["menu"] = "Login"
-#         st.success("✅ Logged out successfully!")
-#         st.rerun()
-
-# # Main Logic
-# if menu == "Login":
-#     st.title("🤖 GenEDxAI")
-#     # Lottie Animation
-#     lottie_login = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_1pxqjqps.json")
-#     if lottie_login:
-#         st_lottie(lottie_login, height=570, width=1180)
-        
-#         st.write("👋 Welcome to GenEDxAI! A platform that uses AI to create educational content and evaluate your learning. Whether you’re a student or educator, we provide personalized support and quizzes to help you succeed!")
-
-
-#     username = st.sidebar.text_input("👤 Username")
-#     password = st.sidebar.text_input("🔒 Password", type="password")
-    
-#     if st.sidebar.button("Login"):
-#         if login_user(username, password):
-#             st.session_state["logged_in"] = True
-#             st.session_state["username"] = username
-#             st.session_state["menu"] = "Results"
-#             st.success("✅ Logged in successfully!")
-#             st.rerun()
-#         else:
-#             st.error("❌ Invalid credentials or error connecting to database.")
-
-# elif menu == "Register":
-#     st.title("📝 Register for EduBot")
-#     username = st.sidebar.text_input("👤 New Username")
-#     password = st.sidebar.text_input("🔒 New Password", type="password")
-    
-#     if st.sidebar.button("Register"):
-#         try:
-#             register_user(username, password)
-#             st.success("✅ Registered successfully! Please log in.")
-#         except Exception as e:
-#             st.error(f"❌ Registration failed: {str(e)}")
-
-# elif menu == "Learn":
-#     st.title(f"👋 Welcome, {st.session_state['username']}!")
-
-#     try:
-#         st.image("static/images/banner.jpg", use_column_width=True)
-#     except Exception:
-#         st.warning("⚠️ Banner image not found. Continuing without it.")
-
-#     prompt = st.text_area("💬 Ask me anything to learn!", key="learn_input")
-    
-#     if st.button("🚀 Submit"):
-#         if prompt:
-#             try:
-#                 response = get_learning_response(prompt)
-#                 st.session_state["chat_history"].append({"user": prompt, "ai": response})
-#                 st.success("✅ Response received!")
-#             except Exception as e:
-#                 st.error(f"❌ Error with chatbot: {str(e)}")
-
-#     if st.session_state["chat_history"]:
-#         st.subheader("📜 Chat History")
-#         for chat in st.session_state["chat_history"]:
-#             st.markdown(f"**🧑 You**: {chat['user']}")
-#             st.markdown(f"**🤖 AI**: {chat['ai']}")
-
-# elif menu == "Exam":
-#     st.title("📝 Take an Exam")
-#     topic = st.text_input("📚 Enter a topic for the exam")
-    
-#     if st.button("🎯 Start Exam") and topic:
-#         try:
-#             questions = generate_exam(topic)
-#             st.session_state["exam_questions"] = questions
-#             st.session_state["exam_active"] = True
-#             st.success("✅ Exam started! Answer the questions below.")
-#         except Exception as e:
-#             st.error(f"❌ Error generating exam: {str(e)}")
-
-#     if st.session_state["exam_active"]:
-#         st.subheader("📄 Questions")
-#         st.write(st.session_state["exam_questions"])
-#         answers = st.text_area("✏️ Enter your answers (one per line)", key="exam_input")
-        
-#         if st.button("📤 Submit Answers"):
-#             try:
-#                 marks, mistakes = evaluate_exam(st.session_state["exam_questions"], answers)
-#                 store_result(st.session_state["username"], topic, marks, mistakes)
-#                 st.success("✅ Exam submitted successfully!")
-#                 st.write(f"🎓 **Your Score:** {marks}/5")
-#                 st.write("🧠 **Mistakes & Feedback:**")
-#                 st.markdown(mistakes)
-#                 st.session_state["exam_active"] = False
-#             except Exception as e:
-#                 st.error(f"❌ Error evaluating exam: {str(e)}")
-
-# elif menu == "Results":
-#     st.title("📊 Your Results")
-
-#     try:
-#         results = get_user_results(st.session_state["username"])
-#         if results:
-#             for result in results:
-#                 st.markdown(f"""
-#                 #### 📌 Topic: {result['topic']}
-#                 - 🏆 Score: **{result['marks']}/5**
-#                 - 🗓️ Date: {result['date']}
-#                 - ❗ Mistakes: {result['mistakes']}
-#                 ---
-#                 """)
-#         else:
-#             st.info("ℹ️ No results yet. Take an exam!")
-#     except Exception as e:
-#         st.error(f"❌ Error fetching results: {str(e)}")
-
-
-
-
-
-
-
-# required code .........
 import streamlit as st
 from streamlit_lottie import st_lottie
 import requests
@@ -449,7 +8,25 @@ from utils.auth import login_user, register_user
 from utils.chatbot import get_learning_response
 from utils.exam import generate_exam, evaluate_exam
 from utils.db import store_result, get_user_results
+from utils.db import save_chat, get_chat_history, clear_chat_history
 
+# from fpdf import FPDF
+# import io
+
+hide_streamlit_elements = """
+<style>
+#GithubIcon { 
+    visibility: hidden; 
+}
+.stDeployButton { 
+    visibility: hidden; 
+}
+.viewerBadge_container__1QSob { 
+    visibility: hidden; 
+}
+</style>
+"""
+st.markdown(hide_streamlit_elements, unsafe_allow_html=True)
 # Load custom CSS
 with open("static/style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
@@ -471,13 +48,13 @@ if "logged_in" not in st.session_state:
     st.session_state["menu"] = "Login"
 
 # Sidebar Navigation
-st.sidebar.title("📘 EduBot")
+st.sidebar.markdown('<h1 style="font-size:36px;">📘 EduBot</h1>', unsafe_allow_html=True)
+st.sidebar.markdown('<div style="font-size:28px;">🔐 Menu</div>', unsafe_allow_html=True)
 
 if not st.session_state["logged_in"]:
-    menu = st.sidebar.radio("🔐 Menu", ["Login", "Register"])
+    menu = st.sidebar.radio("", ["Login", "Register"], key="menu_radio")
 else:
-    menu = st.sidebar.radio("📚 Menu", ["Learn", "Exam", "Results"])
-
+    menu = st.sidebar.radio("📚 Menu", ["Learn", "Exam", "Results"], key="menu_radio")
     if st.sidebar.button("🚪 Logout"):
         st.session_state["logged_in"] = False
         st.session_state["username"] = None
@@ -487,17 +64,14 @@ else:
         st.success("✅ Logged out successfully!")
         st.rerun()
 
-# Main Logic
+# =============================
+# -------- Login Page ---------
+# =============================
 if menu == "Login":
     st.title("🤖 GenEDxAI")
-    
-    # Add space between title and content
     st.markdown("<div style='margin-top: 40px;'></div>", unsafe_allow_html=True)
-    
-    # Display responsive welcome section with animation and text side by side
-    # Smaller column for text, larger for animation
-    col1, col2 = st.columns([2, 5])  # Adjusted ratio to make animation bigger than text
-    
+
+    col1, col2 = st.columns([2, 5])
     with col1:
         st.markdown("""
         <div style="padding: 20px 0;">
@@ -512,37 +86,43 @@ if menu == "Login":
             </p>
         </div>
         """, unsafe_allow_html=True)
-    
     with col2:
-        # Lottie Animation - larger size
         lottie_login = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_1pxqjqps.json")
         if lottie_login:
             st_lottie(lottie_login, height=450, key="welcome_animation")
         else:
-            st.warning("⚠️ Could not load animation")
+            st.warning("⚠ Could not load animation")
 
-    username = st.sidebar.text_input("👤 Username")
-    password = st.sidebar.text_input("🔒 Password", type="password")
-    
-    if st.sidebar.button("Login"):
-        if login_user(username, password):
-            st.session_state["logged_in"] = True
-            st.session_state["username"] = username
-            st.session_state["menu"] = "Results"
-            st.success("✅ Logged in successfully!")
-            st.rerun()
-        else:
-            st.error("❌ Invalid credentials or error connecting to database.")
+    # Sidebar login fields
+    st.sidebar.markdown('<div style="margin-top:100px;"><label style="font-size:25px;">👤 Username</label></div>', unsafe_allow_html=True)
+    login_username = st.sidebar.text_input("", key="login_user_input", placeholder="Enter username")
 
+    st.sidebar.markdown('<div style="margin-top:30px;"><label style="font-size:25px;">🔒 Password</label></div>', unsafe_allow_html=True)
+    login_password = st.sidebar.text_input("", type="password", key="login_pass_input", placeholder="Enter password")
+
+    login_clicked = st.sidebar.button("🔐 *Login*")
+
+    if login_clicked:
+        try:
+            if login_user(login_username, login_password):
+                st.session_state["logged_in"] = True
+                st.session_state["username"] = login_username
+                st.session_state["menu"] = "Learn"
+                st.success(f"✅ Logged in as {login_username}!")
+                st.rerun()
+            else:
+                st.error("❌ Invalid username or password.")
+        except Exception as e:
+            st.error(f"❌ Login failed: {str(e)}")
+
+# =============================
+# ------- Register Page -------
+# =============================
 elif menu == "Register":
     st.title("📝 Register for EduBot")
-    
-    # Add space between title and content
     st.markdown("<div style='margin-top: 40px;'></div>", unsafe_allow_html=True)
-    
-    # Add similar layout for register page with same proportions as login page
-    col1, col2 = st.columns([2, 5])  # Match the login page ratio
-    
+
+    col1, col2 = st.columns([2, 5])
     with col1:
         st.markdown("""
         <div style="padding: 20px 0;">
@@ -553,66 +133,71 @@ elif menu == "Register":
             </p>
         </div>
         """, unsafe_allow_html=True)
-        
     with col2:
         lottie_login = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_1pxqjqps.json")
         if lottie_login:
-            st_lottie(lottie_login, height=450, key="welcome_animation")
+            st_lottie(lottie_login, height=450, key="register_animation")
         else:
-            st.warning("⚠️ Could not load animation")
-        # Different animation for register page with larger size
-        # lottie_register = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_kU51j8.json")
-        # if lottie_register:
-        #     st_lottie(lottie_register, height=450, key="register_animation")
-        
-    username = st.sidebar.text_input("👤 New Username")
-    password = st.sidebar.text_input("🔒 New Password", type="password")
-    
-    if st.sidebar.button("Register"):
+            st.warning("⚠ Could not load animation")
+
+    # Sidebar register fields
+    st.sidebar.markdown('<div style="margin-top:100px;"><label style="font-size:25px;">👤 New Username</label></div>', unsafe_allow_html=True)
+    register_username = st.sidebar.text_input("", key="register_user_input", placeholder="Choose a unique username")
+
+    st.sidebar.markdown('<div style="margin-top:50px;"><label style="font-size:25px;">🔒 New Password</label></div>', unsafe_allow_html=True)
+    register_password = st.sidebar.text_input("", type="password", key="register_pass_input", placeholder="Choose a strong password")
+
+    register_clicked = st.sidebar.button("📝 *Register*")
+
+    if register_clicked:
         try:
-            register_user(username, password)
+            register_user(register_username, register_password)
             st.success("✅ Registered successfully! Please log in.")
+            st.session_state["menu"] = "Login"
+            st.rerun()
         except Exception as e:
             st.error(f"❌ Registration failed: {str(e)}")
             
-    
-
+            
+            
 elif menu == "Learn":
     st.title(f"👋 Welcome, {st.session_state['username']}!")
 
-    # Make banner responsive
-    # try:
-    #     st.image("static/images/banner.jpg", use_column_width=True)
-    # except Exception:
-    #     st.warning("⚠️ Banner image not found. Continuing without it.")
+    prompt = st.text_area("💬 Ask me anything to learn!")
 
-    # Make chat interface responsive
-    col1, col2 = st.columns([4, 1])  # Main content and padding/space
-    
-    with col1:
-        prompt = st.text_area("💬 Ask me anything to learn!", key="learn_input", height=100)
-        
-        if st.button("🚀 Submit"):
-            if prompt:
-                try:
-                    response = get_learning_response(prompt)
-                    st.session_state["chat_history"].append({"user": prompt, "ai": response})
-                    st.success("✅ Response received!")
-                except Exception as e:
-                    st.error(f"❌ Error with chatbot: {str(e)}")
+    if st.button("🚀 Submit", key="submit_prompt"):
+        if prompt:
+            response = get_learning_response(prompt)
+            # Append consistent keys for user and ai messages
+            st.session_state["chat_history"].append({"user_msg": prompt, "ai_msg": response})
+            save_chat(st.session_state["username"], prompt, response)
+            st.success("✅ Response received!")
 
-    if st.session_state["chat_history"]:
+    # Get chat history safely, default empty list
+    chat_history = get_chat_history(st.session_state["username"]) or []
+
+    if chat_history:
         st.subheader("📜 Chat History")
-        for chat in reversed(st.session_state["chat_history"][-5:]):  # Show last 5 chats, newest first
-            st.markdown("""
-            <div style="border-left: 3px solid #2e7d32; padding-left: 10px; margin-bottom: 10px;">
-                <p><strong>🧑 You:</strong> {user}</p>
-            </div>
-            <div style="border-left: 3px solid #1976d2; padding-left: 10px; margin-bottom: 20px;">
-                <p><strong>🤖 AI:</strong> {ai}</p>
-            </div>
-            """.format(user=chat['user'], ai=chat['ai']), unsafe_allow_html=True)
-            
+
+        # Clear chat button with a unique key
+        if st.button("🧹 Clear Chat History", key="clear_history"):
+            st.session_state["chat_history"] = []
+            clear_chat_history(st.session_state["username"])
+            st.success("🧼 History cleared!")
+            st.experimental_rerun()
+
+        # Display chat in reverse order (latest first)
+        for chat in reversed(chat_history):
+            user_text = chat.get("user_msg", "")
+            ai_text = chat.get("ai_msg", "")
+
+            # Safe multiline markdown with formatting
+            st.markdown(f"""
+                <p><strong>🧑 You:</strong> {user_text}</p>
+                <p><strong>🤖 AI:</strong> {ai_text}</p>
+                <hr>
+            """, unsafe_allow_html=True)
+
 
 
 elif menu == "Exam":
@@ -637,12 +222,12 @@ elif menu == "Exam":
         
         # Make questions stand out with styled container
         st.markdown(f"""
-        <div style="background-color: #f0f2f6; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+        <div style="background-color: ""; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
             {st.session_state["exam_questions"]}
         </div>
         """, unsafe_allow_html=True)
         
-        answers = st.text_area("✏️ Enter your answers (one per line)", key="exam_input", height=200)
+        answers = st.text_area("✏ Enter your answers (one per line)", key="exam_input", height=200)
         
         if st.button("📤 Submit Answers"):
             try:
@@ -651,7 +236,7 @@ elif menu == "Exam":
                 
                 # Results with better styling
                 st.markdown(f"""
-                <div style="background-color: #e8f5e9; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                <div style="background-color: ""; padding: 20px; border-radius: 10px; margin: 20px 0;">
                     <h3>Exam Results</h3>
                     <h4>🎓 Your Score: {marks}/5</h4>
                     <h5>🧠 Feedback:</h5>
@@ -681,7 +266,7 @@ elif menu == "Results":
                             <strong>🏆 Score:</strong> {result['marks']}/5
                         </div>
                         <div>
-                            <strong>🗓️ Date:</strong> {result['date']}
+                            <strong>🗓 Date:</strong> {result['date']}
                         </div>
                     </div>
                     <div style="margin-top: 10px;">
@@ -720,7 +305,7 @@ st.markdown("""
         © 2025 <strong>GenEDxAI</strong>. All rights reserved.
     </p>
     <p style="font-size: 14px; color: gray;">
-        Crafted with <span style="color: #e74c3c;">❤️</span> using <strong>Streamlit</strong>. Designed for Lifelong Learners.
+        Crafted with <span style="color: #e74c3c;">❤</span> using <strong>Streamlit</strong>. Designed for Lifelong Learners.
     </p>
     <div style="margin-top: 10px;">
         <a href="https://www.linkedin.com" target="_blank" style="margin: 0 10px; text-decoration: none; color: #0e76a8;">LinkedIn</a>
@@ -729,5 +314,3 @@ st.markdown("""
     </div>
 </div>
 """, unsafe_allow_html=True)
-        
-    
