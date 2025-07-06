@@ -8,7 +8,7 @@ from utils.auth import login_user, register_user
 from utils.chatbot import get_learning_response      
 from utils.exam import generate_exam, evaluate_exam
 from utils.db import store_result, get_user_results
-from utils.db import save_chat, get_chat_history, clear_chat_history
+from utils.db import save_chat, get_chat_history, clear_chat_history  
 
 # from fpdf import FPDF
 # import io
