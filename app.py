@@ -4,7 +4,7 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 import requests
 import google.generativeai as genai  
-from utils.auth import login_user, register_user
+from utils.auth import login_user, register_user 
 from utils.chatbot import get_learning_response         
 from utils.exam import generate_exam, evaluate_exam
 from utils.db import store_result, get_user_results
