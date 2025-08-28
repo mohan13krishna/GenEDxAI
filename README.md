@@ -10,7 +10,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/mohan13krishna/GenEDxAI?style=for-the-badge&logo=github)](https://github.com/mohan13krishna/GenEDxAI/stargazers)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python)](https://python.org) 
-
+ 
 *Transforming GenZ education through intelligent AI-powered learning experiences*
 
 </div>
