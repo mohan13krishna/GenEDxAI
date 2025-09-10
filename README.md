@@ -14,7 +14,7 @@
 *Transforming GenZ education through intelligent AI-powered learning experiences*
 
 </div>
-
+ 
 ---
 
 ## 🌟 Overview
