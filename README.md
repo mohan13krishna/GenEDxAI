@@ -4,7 +4,7 @@
 
 ![GenEDxAI Logo](https://img.shields.io/badge/GenEDxAI-AI%20Education-blue?style=for-the-badge&logo=artificial-intelligence&logoColor=white)     
   
-### 🎓 A Revolutionary Way of Learning with AI-Powered Intelligence   
+### 🎓 A Revolutionary Way of Learning with AI-Powered Intelligence    
      
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Try_Now-success?style=for-the-badge)](https://genedxai.onrender.com) 
 [![GitHub Stars](https://img.shields.io/github/stars/mohan13krishna/GenEDxAI?style=for-the-badge&logo=github)](https://github.com/mohan13krishna/GenEDxAI/stargazers)
