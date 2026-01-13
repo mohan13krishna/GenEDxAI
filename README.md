@@ -1,7 +1,7 @@
 # 🚀 GenEDxAI: AI-Powered Educational Revolution
               
 <div align="center">        
-
+ 
 ![GenEDxAI Logo](https://img.shields.io/badge/GenEDxAI-AI%20Education-blue?style=for-the-badge&logo=artificial-intelligence&logoColor=white)     
   
 ### 🎓 A Revolutionary Way of Learning with AI-Powered Intelligence    
