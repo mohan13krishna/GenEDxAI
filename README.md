@@ -3,7 +3,7 @@
 <div align="center">         
  
 ![GenEDxAI Logo](https://img.shields.io/badge/GenEDxAI-AI%20Education-blue?style=for-the-badge&logo=artificial-intelligence&logoColor=white)     
-  
+   
 ### 🎓 A Revolutionary Way of Learning with AI-Powered Intelligence    
          
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Try_Now-success?style=for-the-badge)](https://genedxai.onrender.com) 
