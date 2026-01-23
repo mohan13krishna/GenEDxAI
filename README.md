@@ -16,7 +16,7 @@
 </div>
 ---
 
-## 🌟 Overview
+## 🌟 Overview  
 
 **GenEDxAI** is a cutting-edge AI-powered education platform specifically designed for the modern GenZ learner. Our platform revolutionizes traditional learning by combining interactive AI conversations with personalized assessment systems, creating an engaging and dynamic educational ecosystem.
 
