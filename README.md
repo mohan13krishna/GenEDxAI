@@ -23,7 +23,7 @@ Powered by **Google's Gemini AI**, GenEDxAI delivers intelligent, contextual res
 
 ---
 
-## ✨ Key Features
+### ✨ Key Features
 
 ### 🧠 **Interactive AI Learning**
 - **Smart Q&A System**: Ask questions on any topic and receive detailed, educational responses
