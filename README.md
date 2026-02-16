@@ -1,4 +1,4 @@
- # 🚀 GenEDxAI: AI-Powered Educational Revolution  
+ # 🚀 GenEDxAI: AI-Powered Educational Revolution   
                         
 <div align="center">              
  
