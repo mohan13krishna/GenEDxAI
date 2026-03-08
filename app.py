@@ -3,7 +3,6 @@
 import streamlit as st
 from streamlit_lottie import st_lottie
 import requests
-import google.generativeai as genai
 from datetime import datetime, timedelta
 import time
 from utils.auth import login_user, register_user
