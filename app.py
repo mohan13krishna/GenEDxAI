@@ -5,6 +5,34 @@ from streamlit_lottie import st_lottie
 import requests
 from datetime import datetime, timedelta
 import time
+
+# Check configuration before importing other modules
+try:
+    from config.config import MONGODB_URI, OPENROUTER_API_KEY, DB_NAME
+    if not MONGODB_URI:
+        st.error("""
+        ❌ **Configuration Error: MONGODB_URI not set**
+        
+        To fix this in Streamlit Cloud:
+        1. Go to your app's **Settings** (gear icon)
+        2. Click **Secrets**
+        3. Add this line:
+        ```toml
+        MONGODB_URI = "mongodb+srv://username:password@cluster.mongodb.net/edu_chatbot?retryWrites=true&w=majority"
+        ```
+        4. Click Save - the app will restart automatically
+        
+        For local development, add to `.env` file:
+        ```
+        MONGODB_URI=mongodb://localhost:27017/
+        OPENROUTER_API_KEY=your_key_here
+        ```
+        """)
+        st.stop()
+except Exception as e:
+    st.error(f"❌ Configuration Error: {str(e)}")
+    st.stop()
+
 from utils.auth import login_user, register_user
 from utils.chatbot import get_learning_response
 from utils.exam import generate_exam, evaluate_exam
